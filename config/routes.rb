@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews, except: [:show, :index]
   resources :dinners
   resources :lunches
   resources :breakfasts

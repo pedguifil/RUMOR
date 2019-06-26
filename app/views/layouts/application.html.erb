@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RUMOR</title>
+    <%= render 'layouts/bootstrap' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,7 +11,9 @@
   </head>
 
   <body>
-    <%= render partial: "/layouts/navbar" %>
-    <%= yield %>
+    <%= render '/layouts/navbar' %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
   </body>
 </html>
